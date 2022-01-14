@@ -62,6 +62,8 @@ h1 {
     border-radius: 0.2em;
     cursor: pointer;
     transition: all 0.3s;
+
+    
 }
 
 .offer button:hover {
