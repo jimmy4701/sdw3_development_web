@@ -51,24 +51,40 @@ h1 {
     margin-right: 0.2em;
 }
 
-.offer button {
+button {
     background-color: #0063e5;
     color: white;
     text-transform: uppercase;
-    width: 100%;
     border: none;
     padding: 1em;
     font-size: 1.1em;
     border-radius: 0.2em;
     cursor: pointer;
     transition: all 0.3s;
-
-    
 }
 
-.offer button:hover {
+button:hover {
     background-color: #1c73e6;
 }
+
+button.large {
+    padding: 1em 10em;
+}
+
+button.white-btn {
+    background-color: rgba(0, 0, 0, 0.50);
+    border: 1px solid white;
+}
+
+button.white-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.offer button {
+    width: 100%;
+}
+
 
 .offers-details {
     font-size: 0.7em;
@@ -77,13 +93,6 @@ h1 {
 
 /* Second part */
 .second-part {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-
-    align-items: center;
-    justify-content: center;
-
     color: white;
 }
 
@@ -94,4 +103,94 @@ h1 {
 .second-content {
     max-width: 32vw;
     margin-left: 6em;
+}
+
+.second-content-container {
+    max-width: 53em;
+    margin-left: 1em;
+}
+
+.second-content-container ul {
+    max-width: 50em;
+    font-size: 1.3em;
+    color: #c6c6c6;
+}
+
+.second-content-container ul li {
+    margin: 1em 0 ;
+}
+
+.second-content-container h1 {
+    font-size: 2.5em;
+}
+
+/* Button center container */
+.button-center-container {
+    height: 30vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-size-part {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.devices-container {
+    color: white;
+    flex-direction: column;
+}
+
+.devices {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.device-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.device-details img {
+    height: 13em;
+}
+
+/* Navbar design */
+nav#navbar {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.7em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar-logo {
+    height: 3em;
+    opacity: 0;
+}
+
+#navbar.visible #navbar-logo {
+    opacity: 1;
+}
+
+#signup {
+    opacity: 0;
+}
+
+#navbar.visible #signup {
+    opacity: 1;
 }
